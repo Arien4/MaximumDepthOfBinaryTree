@@ -20,9 +20,11 @@ import com.sun.source.tree.Tree;
 public class Main {
 
     public static void main(String[] args) {
-        TreeNode right = new TreeNode(20, new TreeNode(15, null, null), new TreeNode(7, null, null));
-        TreeNode left = new TreeNode(9, null, null);
-        TreeNode root = new TreeNode(3, left, right);
+//        TreeNode right = new TreeNode(20, new TreeNode(15, null, null), new TreeNode(7, null, null));
+//        TreeNode left = new TreeNode(9, null, null);
+//        TreeNode root = new TreeNode(3, left, right);
+        Integer[] array = {3,9,20,null,null,15,7};
+        TreeNode root = new TreeNode().arrayToTreeNode(array);
         System.out.println(new Solution().maxDepth(root));
     }
 }
